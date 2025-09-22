@@ -10,6 +10,12 @@ body {
   background: #f5f5f5;
   color: #333;
   line-height: 1.5;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* === CONTENEDOR PRINCIPAL === */
@@ -32,6 +38,7 @@ body {
 
 .contenedor-1 .logo img {
   height: 60px;
+  width: auto;
 }
 
 .menu {
@@ -42,7 +49,7 @@ body {
 
 .menu a {
   color: white;
-  text-decoration: none;
+  padding: .5rem 0;
   font-weight: bold;
 }
 
@@ -55,8 +62,7 @@ body {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
   gap: 1rem;
-  padding: 1rem;
-  flex: 1;
+  padding: 1rem 0;
 }
 
 /* LATERAL IZQUIERDO */
@@ -126,15 +132,15 @@ body {
 /* === PERFIL USUARIO === */
 .contenedor-3 {
   background: #eaeaea;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .perfil-usuario {
   max-width: 800px;
   margin: auto;
   background: #fff;
-  border-radius: 8px;
   padding: 1rem;
+  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -152,9 +158,44 @@ body {
   object-fit: cover;
 }
 
-/* === RESPONSIVE === */
+/* === RESPONSIVE / MÓVIL === */
 @media (max-width: 1024px) {
   .contenedor-2 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contenedor-1 .logo, .contenedor-1 .menu {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contenedor-1 .menu {
+    justify-content: center;
+    margin-top: .5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor-1 .logo img {
+    height: 50px;
+  }
+  
+  .menu a {
+    font-size: .9rem;
+  }
+
+  .gal {
+    grid-template-columns: 1fr; /* galería de 1 columna en pantallas muy pequeñas */
+  }
+
+  .perfil-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lado-izq, .lado-der {
+    width: 100%;
   }
 }
