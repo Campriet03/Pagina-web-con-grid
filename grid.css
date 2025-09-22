@@ -1,0 +1,152 @@
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.contenedor-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: rgb(94, 5, 5);
+    padding: 30px 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+img{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 14px;
+    font-family: cursive;
+}
+a:hover{
+    color: black;
+}
+
+.contenedor-2{
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px; 
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lado-izq {
+    grid-column: 1 / 2;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.gal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-rows: repeat(3, 150px);  /* 3 filas iguales */
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.lado-der {
+    grid-column: 3 / 4;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.galeria{
+     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.galeria button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.galeria button:hover {
+    background: darkred;
+}
+
+.contenedor-3{
+    background-color: rgb(67, 7, 7);
+
+}
+
+.perfil-usuario {
+    display: flex;
+    flex-direction: column;       
+    align-items: center; 
+    gap: 15px;           
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.perfil-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.perfil-info {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 300px;
+}
+
+.boton{
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: darkred;
+}
